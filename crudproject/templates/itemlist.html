@@ -1,0 +1,26 @@
+<!-- {% for i in object_list %}
+{{i.slno}}
+{{i.itemname}}
+{{i.description}}
+{% endfor %} -->
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">item_name</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in object_list %}
+      <tr>
+        <th scope="row">{{i.slno}}</th>
+        <td>{{i.itemname}}</td>
+        <td>{{i.description}}</td>
+        
+         
+       
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
